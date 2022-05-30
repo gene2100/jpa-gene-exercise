@@ -1,0 +1,1 @@
+insert into contacts (id,firstname, lastname, gender, submited_channel) values ('1001','Genelnw', 'Minecraft', 'MALE', 'REACTIVE_FORM');
