@@ -32,18 +32,18 @@ public class Contract {
 	
 	@Enumerated(EnumType.STRING)
 	@NotNull
-	private gender gender;
+	private Gender gender;
 	
 	@Enumerated(EnumType.STRING)
 	@NotNull(message = "Submited Channel cannot be null")
-	private submitedChannel submitedChannel;
+	private SubmitedChannel submitedChannel;
 	
 	public Contract() {
 		
 	}
 	
-	public Contract(String firstname, String lastname, gender gender,
-			submitedChannel submitedChannel) {
+	public Contract(String firstname, String lastname, Gender gender,
+			SubmitedChannel submitedChannel) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -67,19 +67,19 @@ public class Contract {
 		this.lastname = lastname;
 	}
 
-	public gender getGender() {
+	public Gender getGender() {
 		return gender;
 	}
 
-	public void setGender(gender gender) {
+	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
 
-	public submitedChannel getSubmitedChannel() {
+	public SubmitedChannel getSubmitedChannel() {
 		return submitedChannel;
 	}
 
-	public void setSubmitedChannel(submitedChannel submitedChannel) {
+	public void setSubmitedChannel(SubmitedChannel submitedChannel) {
 		this.submitedChannel = submitedChannel;
 	}
 	
@@ -92,21 +92,4 @@ public class Contract {
 		return "contract [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", gender=" + gender
 				+ ", submitedChannel=" + submitedChannel + "]";
 	}
-	
-	public void update(Contract contract) {
-		if(contract.getFirstname() != null) {
-			this.setFirstname(contract.getFirstname());
-		}
-		if(contract.getLastname() != null) {
-			this.setLastname(contract.getLastname());
-		}
-		if(contract.getGender() != null) {
-			this.setGender(contract.getGender());
-		}
-		if(contract.getSubmitedChannel() != null) {
-			this.setSubmitedChannel(contract.getSubmitedChannel());
-		}
-	}
-	
-	
 }

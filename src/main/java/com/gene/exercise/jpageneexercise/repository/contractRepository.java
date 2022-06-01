@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.gene.exercise.jpageneexercise.entity.Contract;
 
-public interface contractRepository extends JpaRepository<Contract, UUID> {
+public interface ContractRepository extends JpaRepository<Contract, UUID> {
 
 }

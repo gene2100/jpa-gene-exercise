@@ -1,6 +1,6 @@
 package com.gene.exercise.jpageneexercise.entity;
 
-public enum gender{
+public enum Gender{
 	MALE, FEMALE
 }
 
